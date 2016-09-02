@@ -1,13 +1,12 @@
 ## RUN
 
 ```
-alias ansible='docker run --rm -it --name ansible -v `pwd`:/data ansible_console ansible'
+alias ansible='docker run --rm -it --name ansible -v `pwd`:/data docker pull charlestg/centos_ansible ansible'
 
 docker run --rm -it \
     --name ansible \
-    -e ANSIBLE_HOST_KEY_CHECKING=False \
     -v `pwd`:/data \
-    ansible_console ansible --help
+    docker pull charlestg/centos_ansible ansible --help
 ```
 
 ## Example
