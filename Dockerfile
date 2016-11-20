@@ -8,7 +8,7 @@ FROM ansible/centos7-ansible:stable
 #    yum -y install epel-release && \
 #    yum -y install PyYAML python-jinja2 python-httplib2 python-keyczar python-paramiko python-setuptools git python-pip
 
-RUN yum install -y gcc openssh-client sshpass python-devel libffi-devel openssl-devel
+RUN yum install -y gcc openssh-clients sshpass python-devel libffi-devel openssl-devel
 
 RUN pip install shade
 
